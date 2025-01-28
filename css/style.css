@@ -3350,4 +3350,24 @@ body.modal {
 	}
 }
 
+.casestudy h1{
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 3;
+}
+.casestudy h2{
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 2.6;
+}
+.casestudy h3{
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 2;
+}
+
+.popup_details .top_image, .popup_details .portfolio_main_title{
+	display: none;
+}
+
 
