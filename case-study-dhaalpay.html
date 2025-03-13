@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study - Dhaal Pay</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #2c3e50;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #1e3c72;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Sections */
+        section {
+            background: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            border-bottom: 3px solid #1e3c72;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Personas */
+        .persona {
+            background: #f9f9f9;
+            padding: 15px;
+            border-left: 5px solid #1e3c72;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .persona h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <h1>Dhaal Pay - UPI Security & Financial Insights</h1>
+        <p>Ensuring secure digital payments and financial health through UPI ID verification and CIBIL score tracking.
+        </p>
+    </header>
+
+    <section class="overview">
+        <h2>Overview</h2>
+        <p>In the fast-growing digital payment landscape, Unified Payments Interface (UPI) has revolutionized
+            transactions in India. However, with its convenience comes a significant challenge—fraudulent transactions
+            and unverified UPI IDs. Users often struggle to determine whether a UPI ID is legitimate, leading to
+            security risks and potential financial losses.</p>
+        <p>Dhaal Pay is a mobile application designed to address this issue by enabling users to verify UPI IDs before
+            making payments. By providing crucial insights like UPI account authenticity, transaction frequency,
+            location data, and security status, Dhaal Pay empowers users to make informed decisions while ensuring a
+            safer digital transaction experience.</p>
+    </section>
+
+    <section class="problem">
+        <h2>Problem Statement</h2>
+        <p>With the rise of UPI-based digital payments, fraud cases have also increased significantly. Many users
+            unknowingly send money to fraudulent or newly created UPI IDs, leading to financial loss and security
+            concerns. The lack of transparency in UPI transactions prevents users from verifying recipient authenticity
+            before transferring money.</p>
+        <p>Additionally, many individuals struggle with financial health management, often unaware of their CIBIL score
+            and creditworthiness. A low CIBIL score can:</p>
+        <ul>
+            <li>Reduce loan and credit card approval chances.</li>
+            <li>Increase interest rates on loans.</li>
+            <li>Impact financial stability and future borrowing power.</li>
+        </ul>
+        <h3>Key Challenges Faced by Users</h3>
+        <ul>
+            <li>🚨 UPI Fraud Risk: Scammers create fake UPI IDs to trick users into transferring money.</li>
+            <li>🚨 No Verification Mechanism: Users lack a way to check the authenticity of UPI IDs before making
+                payments.</li>
+            <li>🚨 Financial Unawareness: Many users are unaware of their CIBIL score and how to improve it.</li>
+            <li>🚨 Poor Credit Management: Missing loan or credit card payments negatively affects credit scores, but
+                users often don’t receive proper guidance.</li>
+        </ul>
+    </section>
+
+    <section class="research">
+        <h2>Research & Insights</h2>
+        <h3>User Research Approach</h3>
+        <p>To build a user-centric solution, we conducted extensive research to understand the challenges people face
+            with UPI transactions and credit score management. The research included:</p>
+        <ul>
+            <li>🔍 User Interviews: Conversations with 20+ frequent UPI users and finance professionals.</li>
+            <li>📊 Online Surveys: 150+ respondents shared their experiences with UPI fraud and credit score issues.
+            </li>
+            <li>📑 Market Research: Analysis of existing solutions and their shortcomings in preventing UPI fraud.</li>
+            <li>📈 Competitor Analysis: Studied fintech apps (like Paytm, Google Pay) to identify missing features.</li>
+        </ul>
+        <h3>Key Findings & Insights</h3>
+        <p><strong>1️⃣ UPI Transaction Fraud is a Growing Concern</strong></p>
+        <ul>
+            <li>72% of users have encountered or heard of fraudulent UPI transactions.</li>
+            <li>43% admitted they had sent money to an unverified or suspicious UPI ID at least once.</li>
+            <li>Users expressed frustration over the lack of verification before payment, leading to financial
+                insecurity.</li>
+        </ul>
+        <p><strong>2️⃣ Financial Awareness is Low Among Users</strong></p>
+        <ul>
+            <li>68% of respondents didn’t actively track their CIBIL score.</li>
+            <li>51% were unaware of how to improve their credit score, resulting in loan rejections and higher interest
+                rates.</li>
+            <li>Many users missed credit card or loan payments due to a lack of reminders and guidance.</li>
+        </ul>
+        <p><strong>3️⃣ Existing Solutions Lack Transparency & Insights</strong></p>
+        <ul>
+            <li>Current UPI apps do not provide verification details about the recipient.</li>
+            <li>Users wanted a simple, fast, and reliable way to check UPI security before making payments.</li>
+            <li>Financial tools in other apps are often complex or lack actionable insights on improving CIBIL scores.
+            </li>
+        </ul>
+    </section>
+
+    <section class="user-personas">
+        <h2>User Personas</h2>
+        <p>To ensure Dhaal Pay caters to different user needs, we created multiple personas based on user research.
+            These personas represent individuals facing UPI security risks and financial challenges, highlighting their
+            behaviors, pain points, and goals.</p>
+        <div class="persona">
+            <h3>👤 Rahul Sharma (Tech-Savvy Professional)</h3>
+            <p><strong>Age:</strong> 29 | <strong>Location:</strong> Mumbai | <strong>Occupation:</strong> IT
+                Professional | <strong>Tech Savviness:</strong> High | <strong>Financial Awareness:</strong> Medium</p>
+            <p><strong>Goals & Needs:</strong></p>
+            <ul>
+                <li>Secure UPI Transactions</li>
+                <li>Financial Growth & CIBIL Score Improvement</li>
+                <li>Easy Bill Management</li>
+            </ul>
+            <p><strong>Pain Points:</strong></p>
+            <ul>
+                <li>Fell for a fraudulent UPI transaction.</li>
+                <li>Finds it hard to track and improve CIBIL score.</li>
+                <li>Misses credit card due dates, impacting his credit score.</li>
+            </ul>
+        </div>
+        <div class="persona">
+            <h3>👩 Priya Verma (Young Entrepreneur)</h3>
+            <p><strong>Age:</strong> 26 | <strong>Location:</strong> Bangalore | <strong>Occupation:</strong> Small
+                Business Owner</p>
+            <p><strong>Goals & Needs:</strong></p>
+            <ul>
+                <li>Fraud Prevention in Vendor Payments</li>
+                <li>Business Loan Readiness</li>
+                <li>Better Expense Management</li>
+            </ul>
+            <p><strong>Pain Points:</strong></p>
+            <ul>
+                <li>Lost money to fraudulent vendors.</li>
+                <li>Never checked her CIBIL score.</li>
+                <li>Struggles with managing business expenses.</li>
+            </ul>
+        </div>
+        <div class="persona">
+            <h3>👴 Ramesh Iyer (Retired Government Employee)</h3>
+            <p><strong>Age:</strong> 60 | <strong>Location:</strong> Chennai | <strong>Occupation:</strong> Pensioner
+            </p>
+            <p><strong>Goals & Needs:</strong></p>
+            <ul>
+                <li>Secure Transactions & Fraud Prevention</li>
+                <li>Basic Financial Clarity</li>
+                <li>Simple Bill Reminders</li>
+            </ul>
+            <p><strong>Pain Points:</strong></p>
+            <ul>
+                <li>Struggles with UPI verification.</li>
+                <li>Unaware of CIBIL score.</li>
+                <li>Forgets bill payments.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="competitive-analysis">
+        <h2>Competitive Analysis</h2>
+        <p>The mobile payment and financial wellness market is flooded with apps that offer UPI transactions and credit score tracking. Major competitors include Google Pay, Paytm, PhonePe, and CIBIL. These platforms serve millions of users, but many lack holistic security features or fail to provide actionable insights for improving financial health.</p>
+        
+        <div class="competitor">
+            <h3>1. Google Pay</h3>
+            <p><strong>Strengths:</strong> Trusted brand, easy-to-use, widely adopted for UPI payments.</p>
+            <p><strong>Weaknesses:</strong> Lacks recipient verification before payment, doesn’t provide financial wellness features like CIBIL score tracking.</p>
+            <p><strong>Gap:</strong> Google Pay doesn’t prioritize fraud prevention or guide users on improving their CIBIL scores.</p>
+        </div>
+        
+        <div class="competitor">
+            <h3>2. Paytm</h3>
+            <p><strong>Strengths:</strong> Offers a wide range of services, including UPI payments and mobile recharges.</p>
+            <p><strong>Weaknesses:</strong> UPI fraud prevention is not emphasized, and the credit score feature is not intuitive or actionable for users.</p>
+            <p><strong>Gap:</strong> The app doesn’t provide real-time alerts on fraudulent transactions or financial health improvement tips.</p>
+        </div>
+        
+        <div class="competitor">
+            <h3>3. PhonePe</h3>
+            <p><strong>Strengths:</strong> Popular for UPI payments and wallet integration.</p>
+            <p><strong>Weaknesses:</strong> Does not offer a CIBIL score tracker or detailed financial wellness tools.</p>
+            <p><strong>Gap:</strong> Users are left vulnerable to fraudulent transactions, and there is no financial coaching to improve credit scores.</p>
+        </div>
+        
+        <div class="dhaal-advantage">
+            <h3>Dhaal Pay’s Advantage</h3>
+            <p><strong>Holistic Approach:</strong> Dhaal Pay combines UPI verification, fraud detection, CIBIL score tracking, and financial coaching all in one app.</p>
+            <p><strong>Fraud Prevention:</strong> It provides real-time alerts and detailed verification of recipients to minimize fraud.</p>
+            <p><strong>CIBIL Score Insights:</strong> Offers actionable tips to improve CIBIL scores and financial literacy for users.</p>
+        </div>
+    </section>
+    <section class="ideation">
+        <h2>Ideation</h2>
+        <p>The ideation phase started by identifying the main pain points our target users faced:</p>
+        <ul>
+            <li><strong>Security:</strong> Ensuring UPI transactions were safe from fraud.</li>
+            <li><strong>Financial Literacy:</strong> Helping users track and improve their CIBIL scores.</li>
+            <li><strong>Simplified Finance:</strong> Offering tools to manage bills, loans, and payments.</li>
+        </ul>
+
+        <h3>User Feedback Integration</h3>
+        <p><strong>UPI Verification:</strong> Feedback from users like Rahul and Priya revealed a major concern about authenticating UPI IDs before payments. This led to the development of a UPI verification system.</p>
+        <p><strong>CIBIL Tracking:</strong> Many users like Ramesh wanted a simple way to track their credit score. We integrated clear, actionable CIBIL insights into the app.</p>
+        <p><strong>Financial Reminders:</strong> Users requested a payment reminder feature to avoid missed bills and improve their financial discipline. This was incorporated as a high-priority feature.</p>
+
+        <h3>Feature Evolution</h3>
+        <p><strong>Initial Concept:</strong> Initially, the app only offered basic UPI payment verification.</p>
+        <p><strong>User Feedback:</strong> After conducting user testing, we realized that integrating CIBIL score tracking and financial tips would address broader user needs.</p>
+        <p><strong>Final Concept:</strong> The app evolved to include fraud alerts, expense tracking, and personalized financial insights to help users take proactive control of their finances.</p>
+    </section>
+</body>
+
+</html>
