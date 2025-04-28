@@ -3371,3 +3371,25 @@ body.modal {
 }
 
 
+/* gallery images  */
+
+.gallery_wrap {
+    padding: 20px;
+}
+.gallery_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+.gallery_grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.gallery_grid img:hover {
+    transform: scale(1.05);
+}
+
+
+

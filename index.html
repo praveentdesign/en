@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/dark.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
 	<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 	<!-- /STYLES -->
 
@@ -739,7 +740,7 @@
 												data-category="uxdesign">
 												<div class="image-container">
 													<a class="popup_info" href="#">
-														<img src="img/portfolio/screencapture-ponycraftstore-2025-01-23-00_40_51-min.png"
+														<img src="img/portfolio/1.Banner.png"
 															alt="">
 														<a href="" target="_blank" class="visit-button">Case
 															Study</a>
@@ -748,219 +749,63 @@
 											</div>
 										</div>
 
-										<!-- Portfolio Popup Start -->
-										<div class="details_all_wrap">
-											<div class="casestudy popup_details">
-												<header>
-													<h1>Detailed Case Study: Dhaal Pay</h1>
-												</header>
-
-												<section>
-													<h2>Introduction</h2>
-													<p><strong>Project Title:</strong> Dhaal Pay</p>
-													<p>Dhaal Pay is a mobile application designed to empower users in
-														the realm of digital payments by ensuring security and offering
-														comprehensive financial management tools. The app enables users
-														to verify UPI IDs before making payments and provides additional
-														features such as an expense manager, payment due reminders, and
-														CIBIL score insights.</p>
-													<p><strong>Role:</strong> Product Designer & Developer</p>
-													<p>As the primary creator, I oversaw the end-to-end development of
-														Dhaal Pay, including user research, interface design,
-														prototyping, development, and deployment.</p>
-													<p><strong>Timeline:</strong> 4 months (September 2024 – December
-														2024)</p>
-													<p><strong>Tools Used:</strong> Figma, Flutter, Firebase, Google
-														APIs, Adobe Illustrator</p>
-												</section>
-
-												<section>
-													<h2>Problem Statement</h2>
-													<h3>The Challenge:</h3>
-													<ul>
-														<li>Validate the authenticity of UPI IDs before making
-															transactions.</li>
-														<li>Gain clarity about a vendor’s transaction patterns.</li>
-														<li>Manage their finances effectively without switching between
-															multiple apps.</li>
-													</ul>
-													<h3>Key Questions:</h3>
-													<ul>
-														<li>How can we make UPI payments safer and more reliable for
-															users?</li>
-														<li>How can we integrate financial tools into a payment app
-															without overwhelming users?</li>
-														<li>What are the critical pain points users face while managing
-															personal finances and digital transactions?</li>
-													</ul>
-												</section>
-
-												<section>
-													<h2>Research</h2>
-													<h3>User Research:</h3>
-													<p>To gain insights, I conducted interviews and surveys with 30
-														potential users, focusing on:</p>
-													<ul>
-														<li>Their experiences with UPI payments.</li>
-														<li>Issues faced with fraudulent transactions.</li>
-														<li>Pain points in managing finances using existing tools.</li>
-													</ul>
-													<h3>Key Findings:</h3>
-													<ul>
-														<li><strong>UPI Fraud Concerns:</strong>
-															<ul>
-																<li>65% of users worried about the authenticity of UPI
-																	IDs when transacting with unfamiliar vendors.</li>
-																<li>Many users lacked a way to verify transaction
-																	security.</li>
-															</ul>
-														</li>
-														<li><strong>Need for Financial Management Tools:</strong>
-															<ul>
-																<li>72% expressed frustration with fragmented apps for
-																	expense tracking and reminders.</li>
-																<li>Users wanted an integrated solution for managing due
-																	payments and tracking their financial health.</li>
-															</ul>
-														</li>
-														<li><strong>User Preferences:</strong> A significant preference
-															for intuitive, minimalistic designs with clear visual cues
-															for financial insights.</li>
-													</ul>
-												</section>
-
-												<section>
-													<h2>Ideation & Planning</h2>
-													<h3>Goals:</h3>
-													<ul>
-														<li>Build a feature that allows users to verify UPI IDs with
-															critical details like transaction frequency, UPI age,
-															security status, and vendor’s approximate location.</li>
-														<li>Introduce tools for tracking expenses, setting up payment
-															reminders, and checking/improving CIBIL scores.</li>
-														<li>Ensure seamless integration with existing UPI apps for
-															payments.</li>
-													</ul>
-													<h3>Core Features Identified:</h3>
-													<ul>
-														<li>UPI Verification System</li>
-														<li>Financial Dashboard (Expense Manager and Payment Reminders)
-														</li>
-														<li>CIBIL Score Checking and Improvement Tips</li>
-													</ul>
-												</section>
-
-												<section>
-													<h2>Design Process</h2>
-													<h3>Wireframing & Prototyping:</h3>
-													<p>Low-fidelity wireframes were sketched to map the app’s core
-														functionalities. The user flow focused on ease of navigation
-														across these key features:</p>
-													<ul>
-														<li><strong>UPI Verification Flow:</strong> Users enter the UPI
-															ID, and the system displays details such as transaction
-															volume, UPI age, and security status.</li>
-														<li><strong>Expense Management Dashboard:</strong> A central
-															view showing categorized expenses and payment reminders.
-														</li>
-														<li><strong>CIBIL Insights Section:</strong> Displays the user’s
-															CIBIL score with personalized recommendations.</li>
-													</ul>
-													<h3>UI Design:</h3>
-													<ul>
-														<li><strong>Color Scheme:</strong> A secure and trustworthy
-															palette with shades of blue and green.</li>
-														<li><strong>Typography:</strong> Clear and legible fonts to
-															ensure accessibility.</li>
-														<li><strong>Visual Elements:</strong> Icons and charts for quick
-															data comprehension.</li>
-													</ul>
-												</section>
-
-												<section>
-													<h2>Key Features</h2>
-													<ul>
-														<li><strong>UPI Verification:</strong> Allows users to verify
-															UPI IDs with details like transaction frequency, UPI age,
-															security status, and vendor location.</li>
-														<li><strong>Payment Redirection:</strong> Redirect payments to
-															popular UPI apps like Google Pay and PhonePe.</li>
-														<li><strong>Expense Manager:</strong> Tracks expenses with
-															visual breakdowns and automatic categorization.</li>
-														<li><strong>Payment Due Reminders:</strong> Sends notifications
-															for upcoming bills and dues.</li>
-														<li><strong>CIBIL Score Management:</strong> Displays real-time
-															CIBIL scores and offers actionable improvement tips.</li>
-													</ul>
-												</section>
-
-												<section>
-													<h2>Development Process</h2>
-													<h3>Technology Stack:</h3>
-													<ul>
-														<li><strong>Frontend:</strong> Flutter for cross-platform
-															development.</li>
-														<li><strong>Backend:</strong> Firebase for real-time database
-															and authentication.</li>
-														<li><strong>APIs:</strong> Google Maps API for location data,
-															third-party APIs for CIBIL score integration.</li>
-													</ul>
-													<h3>Challenges Faced:</h3>
-													<ul>
-														<li><strong>Real-Time UPI Data Integration:</strong> Fetching
-															and analyzing transaction patterns was complex.</li>
-														<li><strong>CIBIL Score Integration:</strong> Ensuring accurate
-															data while adhering to financial regulations.</li>
-														<li><strong>User-Friendly Design:</strong> Presenting detailed
-															information without overwhelming users required multiple
-															iterations.</li>
-													</ul>
-												</section>
-
-												<section>
-													<h2>Results</h2>
-													<h3>Quantitative Outcomes:</h3>
-													<ul>
-														<li>User Adoption: 2,000+ downloads in the first month of
-															launch.</li>
-														<li>Fraud Reduction: 80% of users reported increased confidence
-															in UPI transactions.</li>
-														<li>Engagement: 65% of users actively used the expense manager
-															and payment reminders.</li>
-													</ul>
-													<h3>Qualitative Feedback:</h3>
-													<p>Users praised the app’s simplicity and the UPI verification
-														feature as a game-changer. Financial insights and reminders were
-														highlighted as standout features for improving personal finance
-														management.</p>
-												</section>
-
-												<section>
-													<h2>Future Scope</h2>
-													<ul>
-														<li><strong>AI-Powered Fraud Detection:</strong> Predict and
-															flag potentially fraudulent UPI IDs using machine learning.
-														</li>
-														<li><strong>Multi-Language Support:</strong> Expand
-															accessibility for regional audiences.</li>
-														<li><strong>Advanced Financial Tools:</strong> Add investment
-															tracking, budgeting, and savings goal tracker features.</li>
-													</ul>
-												</section>
-
-												<footer>
-													<h2>Conclusion</h2>
-													<p>Dhaal Pay bridges the gap between digital payment security and
-														financial management. By addressing user pain points, the app
-														has set a new standard for safer and smarter payment platforms.
-														This project has been a valuable learning experience,
-														reinforcing the importance of user-centric design and the
-														potential for technology to solve real-world problems.</p>
-												</footer>
+										<!-- Gallery Start -->
+										<div class="gallery_wrap">
+											<div class="gallery_grid">
+												<!-- Repeat this block for each image -->
+												<a href="img/portfolio/dhaalpay/1.Banner.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/1.Banner.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/2.Introduction.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/2.Introduction.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/3.Problem Statements.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/3.Problem Statements.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/4.Research and Insights.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/4.Research and Insights.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/5.Personnas.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/5.Personnas.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/6.Competitor analysis.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/6.Competitor analysis.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/7.Ideation.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/7.Ideation.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/8.Feature Set.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/8.Feature Set.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/9.Design Process.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/9.Design Process.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/10.Design Process.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/10.Design Process.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/11.Testings.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/11.Testings.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/12.Feedback and Iteration.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/12.Feedback and Iteration.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/13.Impact of Iteration.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/13.Impact of Iteration.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/14.Result.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/14.Result.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/15.Future Enhancements.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/15.Future Enhancements.png" alt="Gallery Image 1">
+												</a>
+												<a href="img/portfolio/dhaalpay/16.Conclusion.png" data-lightbox="dhaalpay-gallery">
+													<img src="img/portfolio/dhaalpay/16.Conclusion.png" alt="Gallery Image 1">
+												</a>
+												
+												<!-- Continue adding your 20 images here -->
 											</div>
 										</div>
-										<!-- /Portfolio Popup End -->
-
+										<!-- /Gallery End -->
 									</li>
 								</ul>
 							</div>
@@ -985,6 +830,10 @@
 	<!-- / WRAPPER ALL -->
 
 	<!-- SCRIPTS -->
+	 
+<!-- Lightbox CSS and JS (add in your page head or before closing body tag) -->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
 	<script src="js/plugins.js"></script>
