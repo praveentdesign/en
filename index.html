@@ -21,10 +21,13 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
+	<!-- Fancybox CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.css" />
+
 	<link rel="stylesheet" type="text/css" href="css/plugins.css">
 	<link rel="stylesheet" type="text/css" href="css/dark.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+
 	<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
 	<!-- /STYLES -->
 
@@ -734,79 +737,56 @@
 									</li>
 
 
+									<!-- Card Container -->
+									
 									<li class="uxdesign">
-										<div class="inner">
-											<div class="entry pt_tm_portfolio_animation_wrap" data-title="Dhaal Pay"
-												data-category="uxdesign">
-												<div class="image-container">
-													<a class="popup_info" href="#">
-														<img src="img/portfolio/1.Banner.png"
-															alt="">
-														<a href="" target="_blank" class="visit-button">Case
-															Study</a>
-													</a>
-												</div>
+										<div
+										style="max-width: 300px; margin: 50px auto; text-align: center; cursor: pointer;">
+										<div id="dhaalPayCard"
+											style="border: 1px solid #ccc; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+											<img src="img/portfolio/1.Banner.png" alt="Dhaal Pay"
+												style="width: 100%; display: block;">
+											<div style="padding: 15px; background: #f9f9f9;">
+												<h3 style="margin: 0;">Dhaal Pay</h3>
+												<p style="margin: 5px 0 0;">Click to view case study</p>
 											</div>
 										</div>
+									</div>
 
-										<!-- Gallery Start -->
-										<div class="gallery_wrap">
-											<div class="gallery_grid">
-												<!-- Repeat this block for each image -->
-												<a href="img/portfolio/dhaalpay/1.Banner.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/1.Banner.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/2.Introduction.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/2.Introduction.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/3.Problem Statements.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/3.Problem Statements.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/4.Research and Insights.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/4.Research and Insights.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/5.Personnas.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/5.Personnas.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/6.Competitor analysis.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/6.Competitor analysis.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/7.Ideation.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/7.Ideation.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/8.Feature Set.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/8.Feature Set.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/9.Design Process.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/9.Design Process.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/10.Design Process.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/10.Design Process.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/11.Testings.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/11.Testings.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/12.Feedback and Iteration.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/12.Feedback and Iteration.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/13.Impact of Iteration.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/13.Impact of Iteration.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/14.Result.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/14.Result.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/15.Future Enhancements.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/15.Future Enhancements.png" alt="Gallery Image 1">
-												</a>
-												<a href="img/portfolio/dhaalpay/16.Conclusion.png" data-lightbox="dhaalpay-gallery">
-													<img src="img/portfolio/dhaalpay/16.Conclusion.png" alt="Gallery Image 1">
-												</a>
-												
-												<!-- Continue adding your 20 images here -->
-											</div>
-										</div>
-										<!-- /Gallery End -->
+									<!-- Hidden Gallery -->
+									<div id="dhaalGallery" style="display: none;">
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/1.Banner.png"></a>
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/2.Introduction.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/3.Problem Statements.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/4.Research and Insights.png"></a>
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/5.Personnas.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/6.Competitor analysis.png"></a>
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/7.Ideation.png"></a>
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/8.Feature Set.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/9.Design Process.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/10.Design Process.png"></a>
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/11.Testings.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/12.Feedback and Iteration.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/13.Impact of Iteration.png"></a>
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/14.Result.png"></a>
+										<a data-fancybox="gallery"
+											href="img/portfolio/dhaalpay/15.Future Enhancements.png"></a>
+										<a data-fancybox="gallery" href="img/portfolio/dhaalpay/16.Conclusion.png"></a>
+									</div>
 									</li>
+
+
+
+
+
+
 								</ul>
 							</div>
 						</div>
@@ -829,10 +809,28 @@
 	</div>
 	<!-- / WRAPPER ALL -->
 
+
+	<!-- Fancybox JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5/dist/fancybox/fancybox.umd.js"></script>
+
+
+
+	<!-- JS to trigger modal -->
+	<script>
+		document.getElementById("dhaalPayCard").addEventListener("click", function () {
+			const links = document.querySelectorAll('[data-fancybox="gallery"]');
+			const items = Array.from(links).map(link => ({
+				src: link.getAttribute("href"),
+				type: "image"
+			}));
+			Fancybox.show(items);
+		});
+	</script>
+
 	<!-- SCRIPTS -->
-	 
-<!-- Lightbox CSS and JS (add in your page head or before closing body tag) -->
-	
+
+	<!-- Lightbox CSS and JS (add in your page head or before closing body tag) -->
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
